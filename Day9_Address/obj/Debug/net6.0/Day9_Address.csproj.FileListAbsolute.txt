@@ -1,0 +1,15 @@
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.csproj.AssemblyReference.cache
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.AssemblyInfoInputs.cache
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.AssemblyInfo.cs
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.csproj.CoreCompileInputs.cache
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\bin\Debug\net6.0\Day9_Address.exe
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\bin\Debug\net6.0\Day9_Address.deps.json
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\bin\Debug\net6.0\Day9_Address.runtimeconfig.json
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\bin\Debug\net6.0\Day9_Address.dll
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\bin\Debug\net6.0\Day9_Address.pdb
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.dll
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\refint\Day9_Address.dll
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.pdb
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\Day9_Address.genruntimeconfig.cache
+C:\Users\Ayub\source\repos\Day9_Address\Day9_Address\obj\Debug\net6.0\ref\Day9_Address.dll

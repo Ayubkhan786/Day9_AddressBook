@@ -9,9 +9,13 @@ namespace Day9_Address
 
     class AddressBook
     {
-
+      
         static void Main(string[] args)
         {
+
+            //creating a list of Contacts
+
+
             List<Contacts> contactList = new List<Contacts>();
             contactList.Add(new Contacts
             {
@@ -68,6 +72,35 @@ namespace Day9_Address
                 Console.WriteLine(contacts.phone);
                 Console.WriteLine("*******************************************************************");
             }
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+           
+                //To Add New Contact
+                
+                
+                contactList.Insert(3, new Contacts
+            {
+                Name = Console.ReadLine(),
+                Address = Console.ReadLine(),
+                city = Console.ReadLine(),
+                State = Console.ReadLine(),
+                email = Console.ReadLine(),
+                Zip = Convert.ToInt32(Console.ReadLine()),
+                phone = Convert.ToInt32(Console.ReadLine()),
+            });
+
+            foreach (var contacts in contactList)
+            {
+                Console.WriteLine(contacts.Name);
+                Console.WriteLine(contacts.Address);
+                Console.WriteLine(contacts.city);
+                Console.WriteLine(contacts.State);
+                Console.WriteLine(contacts.email);
+                Console.WriteLine(contacts.Zip);
+                Console.WriteLine(contacts.phone);
+                Console.WriteLine("*******************************************************************");
+
+            }
+
         }
         class Contacts
         {
