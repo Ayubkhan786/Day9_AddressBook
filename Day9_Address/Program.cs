@@ -100,7 +100,24 @@ namespace Day9_Address
                 Console.WriteLine("*******************************************************************");
 
             }
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+           
+            // To Delete/Remove Contact
 
+
+            contactList.Remove(contactList[2]);
+
+            foreach (var contacts in contactList)
+            {
+                Console.WriteLine(contacts.Name);
+                Console.WriteLine(contacts.Address);
+                Console.WriteLine(contacts.city);
+                Console.WriteLine(contacts.State);
+                Console.WriteLine(contacts.email);
+                Console.WriteLine(contacts.Zip);
+                Console.WriteLine(contacts.phone);
+                Console.WriteLine("*******************************************************************");
+            }
         }
         class Contacts
         {
