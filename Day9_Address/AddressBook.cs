@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Day9_Address
 {
 
@@ -25,7 +24,6 @@ namespace Day9_Address
         public void CreateContact()
         {
             //Contacts createcontact=new Contacts();
-
             contactList.Add(new Contacts
             {
                 Name = "Ayub",
@@ -71,8 +69,6 @@ namespace Day9_Address
             });
 
 
-
-
             foreach (var contacts in contactList)
             {
                 Console.WriteLine(contacts.Name);
@@ -84,11 +80,8 @@ namespace Day9_Address
                 Console.WriteLine(contacts.phone);
                 Console.WriteLine("*******************************************************************");
             }
-
-            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            Console.WriteLine("*******************-----------------------------------------------------------------**************************");
         }
-
-
 
         public void Add()
         {
@@ -110,30 +103,30 @@ namespace Day9_Address
             createcontact.phone = Convert.ToInt32(Console.ReadLine());
             contactList.Add(createcontact);
 
-            foreach (var contacts in contactList)
+            foreach (var cont in contactList)
             {
-                Console.WriteLine(contacts.Name);
-                Console.WriteLine(contacts.Address);
-                Console.WriteLine(contacts.city);
-                Console.WriteLine(contacts.State);
-                Console.WriteLine(contacts.email);
-                Console.WriteLine(contacts.Zip);
-                Console.WriteLine(contacts.phone);
+                Console.WriteLine(cont.Name);
+                Console.WriteLine(cont.Address);
+                Console.WriteLine(cont.city);
+                Console.WriteLine(cont.State);
+                Console.WriteLine(cont.email);
+                Console.WriteLine(cont.Zip);
+                Console.WriteLine(cont.phone);
                 Console.WriteLine("*******************************************************************");
 
             }
-
+            Console.WriteLine("*******************-----------------------------------------------------------------**************************");
 
         }
         public void Edit()
         {
             Console.WriteLine("Enter the name of contact to be edited");
-            string name = Console.ReadLine().ToLower();                   
+            string name = Console.ReadLine().ToLower();
             foreach (var conts in contactList)
             {
-                if (contactList.Contains(conts))                      //Check it Contains or not
+                if (contactList.Contains(conts))
                 {
-                    if (conts.Name.Equals(name))                        // Check the Name match
+                    if (conts.Name.Equals(name))
                     {
                         Console.WriteLine("Enter Address\n City\n State\n Email\n Zip\n Phone");
                         int search = Convert.ToInt32(Console.ReadLine());
@@ -173,10 +166,27 @@ namespace Day9_Address
                     {
                         Console.WriteLine("The name Doesn't Exist Enter the correct name");
                     }
+
                 }
             }
+            Console.WriteLine("*******************-----------------------------------------------------------------**************************");
         }
+        public void Delete()
+        {
+            contactList.Remove(contactList[2]);
+
+            foreach (var contacts in contactList)
+            {
+                Console.WriteLine(contacts.Name);
+                Console.WriteLine(contacts.Address);
+                Console.WriteLine(contacts.city);
+                Console.WriteLine(contacts.State);
+                Console.WriteLine(contacts.email);
+                Console.WriteLine(contacts.Zip);
+                Console.WriteLine(contacts.phone);
+                Console.WriteLine("*******************************************************************");
+            }
+        }
+
     }
 }
-
-
