@@ -6,12 +6,26 @@ using System.Threading.Tasks;
 
 namespace Day9_Address
 {
+
+
+    public class Contacts
+    {
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string city { get; set; }
+        public string State { get; set; }
+        public string email { get; set; }
+        public int Zip { get; set; }
+        public int phone { get; set; }
+
+    }
     public class AddressBook
     {
-        //creating a list of Contacts
+        List<Contacts> contactList = new List<Contacts>();
         public void CreateContact()
         {
-            List<Contacts> contactList = new List<Contacts>();
+            //Contacts createcontact=new Contacts();
+
             contactList.Add(new Contacts
             {
                 Name = "Ayub",
@@ -56,6 +70,9 @@ namespace Day9_Address
                 phone = 21161568
             });
 
+
+
+
             foreach (var contacts in contactList)
             {
                 Console.WriteLine(contacts.Name);
@@ -67,18 +84,48 @@ namespace Day9_Address
                 Console.WriteLine(contacts.phone);
                 Console.WriteLine("*******************************************************************");
             }
+
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
         }
+
+
+
+        public void Add()
+        {
+            Contacts createcontact = new Contacts();
+
+            Console.WriteLine("Enter Name");
+            createcontact.Name = Console.ReadLine();
+            Console.WriteLine("Enter Address");
+            createcontact.Address = Console.ReadLine();
+            Console.WriteLine("Enter City");
+            createcontact.city = Console.ReadLine();
+            Console.WriteLine("Enter State");
+            createcontact.State = Console.ReadLine();
+            Console.WriteLine("Enter Email");
+            createcontact.email = Console.ReadLine();
+            Console.WriteLine("Enter Zip");
+            createcontact.Zip = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Phone");
+            createcontact.phone = Convert.ToInt32(Console.ReadLine());
+            contactList.Add(createcontact);
+
+            foreach (var contacts in contactList)
+            {
+                Console.WriteLine(contacts.Name);
+                Console.WriteLine(contacts.Address);
+                Console.WriteLine(contacts.city);
+                Console.WriteLine(contacts.State);
+                Console.WriteLine(contacts.email);
+                Console.WriteLine(contacts.Zip);
+                Console.WriteLine(contacts.phone);
+                Console.WriteLine("*******************************************************************");
+
+            }
+
+
+        }
     }
-    class Contacts
-    {
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string city { get; set; }
-        public string State { get; set; }
-        public string email { get; set; }
-        public int Zip { get; set; }
-        public int phone { get; set; }
-    }
-     
 }
+
+
