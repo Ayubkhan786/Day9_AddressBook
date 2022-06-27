@@ -125,6 +125,57 @@ namespace Day9_Address
 
 
         }
+        public void Edit()
+        {
+            Console.WriteLine("Enter the name of contact to be edited");
+            string name = Console.ReadLine().ToLower();                   
+            foreach (var conts in contactList)
+            {
+                if (contactList.Contains(conts))                      //Check it Contains or not
+                {
+                    if (conts.Name.Equals(name))                        // Check the Name match
+                    {
+                        Console.WriteLine("Enter Address\n City\n State\n Email\n Zip\n Phone");
+                        int search = Convert.ToInt32(Console.ReadLine());
+                        switch (search)
+                        {
+                            case 1:
+                                string address = Console.ReadLine();
+                                conts.Address = address;
+                                break;
+                            case 2:
+                                string City = Console.ReadLine();
+                                conts.city = City;
+                                break;
+                            case 3:
+                                string state = Console.ReadLine();
+                                conts.State = state;
+                                break;
+                            case 4:
+                                string Email = Console.ReadLine();
+                                conts.email = Email;
+                                break;
+                            case 5:
+                                string zip = Console.ReadLine();
+                                conts.Zip = Convert.ToInt32(zip);
+                                break;
+                            case 6:
+                                string Phone = Console.ReadLine();
+                                conts.phone = Convert.ToInt32(Phone);
+                                break;
+                            default:
+                                Console.WriteLine("Enter Valid");
+                                break;
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("The name Doesn't Exist Enter the correct name");
+                    }
+                }
+            }
+        }
     }
 }
 
